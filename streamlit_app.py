@@ -4,7 +4,7 @@ from streamlit_extras.colored_header import colored_header
 from streamlit_extras.metric_cards import style_metric_cards
 
 # Set page config
-st.set_page_config(page_title="Enzyme Kinetics Analysis Tool", layout="wide", initial_sidebar_state="expanded")
+st.set_page_config(page_title="Experiment Planner", layout="wide", initial_sidebar_state="expanded")
 
 # Custom CSS
 st.markdown("""
