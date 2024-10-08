@@ -78,7 +78,7 @@ def feedback_buttons(key):
 # Main application
 def main():
     colored_header(
-        label="Enzyme Kinetics Analysis Tool",
+        label="Experiment Planner",
         description="Temperature-dependent enzyme activity analysis",
         color_name="blue-70"
     )
