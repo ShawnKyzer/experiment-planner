@@ -102,7 +102,7 @@ def main():
                 st.subheader("Materials and Equipment")
                 st.markdown(experiment['content']['equipment_setup'])
                 
-                st.subheader("Hypothesis")
+                st.subheader("Research Goal")
                 st.info(experiment['content']['objective'])
                 
                 st.subheader("Experimental Procedure")
@@ -151,7 +151,7 @@ def main():
                 st.subheader("Materials and Equipment")
                 st.markdown(variant['content']['equipment_setup'])
                 
-                st.subheader("Hypothesis")
+                st.subheader("Research Goal")
                 st.info(variant['content']['objective'])
                 
                 st.subheader("Experimental Procedure")
@@ -201,7 +201,7 @@ def main():
         custom_metric("Total Protocols", len(variants) + len(best_experiments))
     with col2:
         avg_objective = sum(v['evaluation']['Clear Objective'] for v in variants) / len(variants)
-        custom_metric("Avg. Hypothesis Clarity", f"{avg_objective:.2f}")
+        custom_metric("Avg. Research Objective Clarity", f"{avg_objective:.2f}")
     with col3:
         avg_safety = sum(v['evaluation']['Safety Considerations'] for v in variants) / len(variants)
         custom_metric("Avg. Safety Score", f"{avg_safety:.2f}")
