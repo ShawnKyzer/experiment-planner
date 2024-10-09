@@ -86,7 +86,7 @@ def main():
     data = load_data()
 
     # Data export button
-    if st.button("Export Data to LIMS 💾"):
+    if st.button("Export Data to LIMS / ELN 💾"):
         export_data()
     
     # Optimized protocols
