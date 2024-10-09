@@ -7,12 +7,12 @@
         "observations": "During the experiment, observe the time taken for the visible change to occur in each test tube at a specific temperature. Also, monitor the temperature of the water bath or hot plate to ensure it remains constant throughout the experiment.",
         "procedure": [
           "Prepare the enzyme solution and the substrate solution as per the manufacturer's instructions. Ensure the solutions are at room temperature before starting the experiment.",
-          "Label 5-7 test tubes with different temperature points (e.g., 20°C, 30°C, 40°C, 50°C, 60°C, 70°C, 80°C).",
+          "Label 5-7 test tubes with different temperature points (eg, 20°C, 30°C, 40°C, 50°C, 60°C, 70°C, 80°C).",
           "Pour 2ml of enzyme solution into each labeled test tube.",
           "Add 2ml of substrate solution to the first test tube (at the lowest temperature point).",
           "Immerse the test tubes in the water bath or hot plate, ensuring each test tube is at its respective temperature.",
           "Start the stopwatch as soon as the substrate solution is added to the first test tube.",
-          "At regular intervals (e.g., every 30 seconds), transfer the substrate solution from the current test tube to the next one (in sequence), ensuring each test tube spends an equal amount of time at its specific temperature.",
+          "At regular intervals (eg, every 30 seconds), transfer the substrate solution from the current test tube to the next one (in sequence), ensuring each test tube spends an equal amount of time at its specific temperature.",
           "Record the time taken for the visible change (such as color change) to occur in each test tube.",
           "Repeat the experiment 3 times for each temperature point to ensure reproducibility.",
           "After the experiment, allow the test tubes to cool before disposing of them according to your laboratory's waste disposal guidelines."
@@ -96,7 +96,7 @@
         "equipment_setup": "1. Obtain a known amount of the enzyme and its substrate. 2. Prepare a set of test tubes or cuvettes, each labeled with a specific temperature. 3. Set up a thermostat or water bath to maintain the desired temperature for each test tube. 4. Prepare a stopwatch and a spectrophotometer (if applicable) for measuring the reaction rate. 5. Prepare a control group at room temperature.",
         "objective": "The main goal of this experiment is to investigate the effect of temperature on the activity of an enzyme by measuring the rate of a specific enzyme-catalyzed reaction under different temperature conditions.",
         "observations": "1. Changes in reaction rate as a function of temperature 2. Differences in enzyme activity between different temperature conditions 3. Effect of temperature on the enzyme's denaturation or activation 4. Consistency in enzyme concentration and substrate concentration across all test tubes",
-        "procedure": "1. Prepare the enzyme solution by dissolving the enzyme in the specified buffer. 2. Add the substrate to each test tube, ensuring that the concentration of both the enzyme and substrate is consistent across all tubes. 3. Place each test tube into the thermostat or water bath, ensuring that the temperature is accurately maintained. 4. Start the stopwatch and begin recording the time. 5. If using a spectrophotometer, measure the absorbance at specific intervals (e.g., every 5 minutes). 6. Repeat steps 4 and 5 for all temperature conditions. 7. For the control group, follow the same procedure but maintain the enzyme solution at room temperature.",
+        "procedure": "1. Prepare the enzyme solution by dissolving the enzyme in the specified buffer. 2. Add the substrate to each test tube, ensuring that the concentration of both the enzyme and substrate is consistent across all tubes. 3. Place each test tube into the thermostat or water bath, ensuring that the temperature is accurately maintained. 4. Start the stopwatch and begin recording the time. 5. If using a spectrophotometer, measure the absorbance at specific intervals (eg, every 5 minutes). 6. Repeat steps 4 and 5 for all temperature conditions. 7. For the control group, follow the same procedure but maintain the enzyme solution at room temperature.",
         "results": "Anticipated results include a correlation between enzyme activity and temperature, with an optimal temperature for maximum activity. Additionally, the results may reveal temperature ranges beyond which the enzyme denaturates, leading to a decrease in activity. Comparison between the control group and the temperature-treated groups will provide insights into the impact of temperature on enzyme function."
       },
       "reflection": {

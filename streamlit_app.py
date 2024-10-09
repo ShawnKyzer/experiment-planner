@@ -2,6 +2,7 @@ import streamlit as st
 import json
 from streamlit_extras.colored_header import colored_header
 from streamlit_extras.metric_cards import style_metric_cards
+import re
 
 # Set page config
 st.set_page_config(page_title="Experiment Plan Generator", layout="wide", initial_sidebar_state="expanded")
@@ -65,6 +66,29 @@ def custom_metric(label, value):
 def export_data():
     st.success("Data exported to laboratory information management system (LIMS). 📊🧬 (Simulated action)")
 
+def clean_and_format_steps(steps):
+    cleaned_steps = []
+    for step in steps:
+        # Remove leading/trailing whitespace
+        step = step.strip()
+        # Remove leading numbers and dots
+        step = re.sub(r'^\d+\.?\s*', '', step)
+        if step:  # Check if step is not empty after cleaning
+            cleaned_steps.append(step)
+    return cleaned_steps
+
+def display_numbered_steps(title, content):
+    st.subheader(title)
+    if isinstance(content, str):
+        # Split the string into individual steps
+        steps = content.split('.')
+    else:
+        steps = content
+
+    cleaned_steps = clean_and_format_steps(steps)
+    for index, step in enumerate(cleaned_steps, 1):
+        st.markdown(f"{index}. {step}")
+
 # Feedback mechanism
 def feedback_buttons(key):
     col1, col2 = st.columns(2)
@@ -99,22 +123,12 @@ def main():
             col1, col2 = st.columns([2, 1])
             
             with col1:
-                st.subheader("Materials and Equipment")
-                st.markdown(experiment['content']['equipment_setup'])
+                display_numbered_steps("Materials and Equipment", experiment['content']['equipment_setup'])
+                
+                display_numbered_steps("Experimental Procedure", experiment['content']['procedure'])
                 
                 st.subheader("Research Goal")
                 st.info(experiment['content']['objective'])
-                
-                st.subheader("Experimental Procedure")
-                procedure = experiment['content']['procedure']
-                if isinstance(procedure, list):
-                    for step in procedure:
-                        st.markdown(f"- {step}")
-                elif isinstance(procedure, str):
-                    steps = procedure.split('\n')
-                    for step in steps:
-                        if step.strip():
-                            st.markdown(f"- {step.strip()}")
                 
                 st.subheader("Data Collection")
                 st.markdown(experiment['content']['observations'])
