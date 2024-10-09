@@ -130,9 +130,8 @@ def main():
                 st.subheader("Research Goal")
                 st.info(experiment['content']['objective'])
                 
-                st.subheader("Data Collection")
-                st.markdown(experiment['content']['observations'])
-                
+                display_numbered_steps("Data Collection", experiment['content']['observations'])
+
                 st.subheader("Expected Outcomes")
                 st.success(experiment['content']['results'])
             
