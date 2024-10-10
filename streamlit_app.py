@@ -5,7 +5,7 @@ from streamlit_extras.metric_cards import style_metric_cards
 import re
 
 # Set page config
-st.set_page_config(page_title="Experiment Plan Generator", layout="wide", initial_sidebar_state="expanded")
+st.set_page_config(page_title="Experiment Protocol Generator", layout="wide", initial_sidebar_state="expanded")
 
 # Custom CSS
 st.markdown("""
@@ -117,7 +117,7 @@ def main():
     st.header("Optimized Experimental Protocols")
     best_experiments = data['best_experiments']
     for i, experiment in enumerate(best_experiments, 1):
-        with st.expander(f"Protocol {i}: Temperature {experiment.get('temperature', 'N/A')}°C", expanded=i == 1):
+        with st.expander(f"Protocol {i}", expanded=i == 1):
             st.subheader(f"Optimization Score: {experiment['score']:.2f}")
             
             col1, col2 = st.columns([2, 1])
